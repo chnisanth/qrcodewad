@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="qr.css">
+</head>
+<body class="default">
+
+  <div class="container">
+    <h1>QR Code Generator</h1>
+
+    <!-- Dropdown for Background Selection -->
+    <label for="bgSelect">Choose Background:</label>
+    <select id="bgSelect" onchange="changeBackground()">
+      <option value="default">Default</option>
+      <option value="bg1">Nature</option>
+      <option value="bg2">City</option>
+      <option value="bg3">Abstract</option>
+    </select>
+
+    <input type="text" id="text" placeholder="Enter text here" />
+    <button onclick="generateQRCode()">Generate QR Code</button>
+    <div id="qrcode"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="qr.js"></script>
+
+</body>
+</html>

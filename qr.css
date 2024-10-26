@@ -1,0 +1,110 @@
+/* qr.css */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    transition: background 0.5s ease;
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent overlay */
+    padding: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #ffffff;
+  }
+  
+  select, input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  input {
+    width: 250px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #qrcode {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Background options */
+  body.default {
+    background-image: url('https://i.pinimg.com/originals/d0/dc/88/d0dc88d89f15867b70f17fb767cbe90a.jpg');
+  }
+  
+  body.bg1 {
+    background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4');
+  }
+  
+  body.bg2 {
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+  }
+  
+  body.bg3 {
+    background-image: url('https://images.unsplash.com/photo-1502980426475-b83966705988');
+  }
+  
+  select, input {
+    background-color: #fff;
+  }
+  
+  select:focus, input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* For mobile responsiveness */
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+      margin-top: 50px;
+      padding: 20px;
+    }
+  
+    input {
+      width: 100%;
+    }
+  }
+  
